@@ -17,6 +17,10 @@ if [ ! -e "${LUFI_DIR}/lufi.conf" ]; then
             -e 's|<default_delay>|'${DEFAULT_DELAY:-1}'|' \
             -e 's|<max_delay>|'${MAX_DELAY:-0}'|' \
             -e 's|<theme>|'${THEME:-default}'|' \
+            -e 's|<mail_sender>|'${MAIL_SENDER}'|' \
+            -e 's|<mail_how>|'${MAIL_HOW}'|' \
+            -e 's|<mail_howargs>|'${MAIL_HOWARGS}'|' \
+            -e 's|<report>|'${REPORT}'|' \
             -e 's|<allow_pwd_on_files>|'${ALLOW_PWD_ON_FILES:-1}'|' \
             -e 's|<policy_when_full>|'${POLICY_WHEN_FULL:-warn}'|' ${LUFI_DIR}/lufi.conf.template
     )" > ${LUFI_DIR}/lufi.conf
