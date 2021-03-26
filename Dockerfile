@@ -1,4 +1,4 @@
-FROM alpine:3.12.0
+FROM alpine:3.13.3
 
 ARG LUFI_VERSION=master
 
